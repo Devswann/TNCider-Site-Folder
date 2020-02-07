@@ -1,0 +1,621 @@
+body {
+    background-color: #fffef1;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#mobile_menu {
+    color: #10273b;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+/* TOPBAR SHOP NOW */
+
+.topBar {
+    animation: colorchange 10s; /* animation-name followed by duration in seconds*/
+       /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 10s; /* Chrome and Safari */
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background: #10273b;}
+    10%  {background: #007bff;}
+    20%  {background: #10273b;}
+    30%  {background: #007bff;}
+    40%  {background: #10273b;}
+    50%  {background: #007bff;}
+    60%  {background: #10273b;}
+    70%  {background: #007bff;}
+    80%  {background: #10273b;}
+    90%  {background: #007bff;}
+    100%  {background: #10273b;}
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background: #10273b;}
+    10%  {background: #007bff;}
+    20%  {background: #10273b;}
+    30%  {background: #007bff;}
+    40%  {background: #10273b;}
+    50%  {background: #007bff;}
+    60%  {background: #10273b;}
+    70%  {background: #007bff;}
+    80%  {background: #10273b;}
+    90%  {background: #007bff;}
+    100%  {background: #10273b;}
+  }
+
+/* ============================================ */
+
+/* TYPOGRAPHY */
+
+@font-face {
+	font-family: 'Conv_Banque Gothique';
+	src: url('fonts/Banque Gothique.eot');
+	src: local('ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº'), url('fonts/Banque Gothique.woff') format('woff'), url('fonts/Banque Gothique.ttf') format('truetype'), url('fonts/Banque Gothique.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChronicleTextG1SemiboldItalic';
+    src: url('fonts/ChronicleTextG1SemiboldItalic.eot');
+    src: url('fonts/ChronicleTextG1SemiboldItalic.eot') format('embedded-opentype'),
+         url('fonts/ChronicleTextG1SemiboldItalic.woff2') format('woff2'),
+         url('fonts/ChronicleTextG1SemiboldItalic.woff') format('woff'),
+         url('fonts/ChronicleTextG1SemiboldItalic.ttf') format('truetype'),
+         url('fonts/ChronicleTextG1SemiboldItalic.svg#ChronicleTextG1SemiboldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SackersGothicStdHeavy';
+    src: url('fonts/SackersGothicStdHeavy.eot');
+    src: url('fonts/SackersGothicStdHeavy.eot') format('embedded-opentype'),
+         url('fonts/SackersGothicStdHeavy.woff2') format('woff2'),
+         url('fonts/SackersGothicStdHeavy.woff') format('woff'),
+         url('fonts/SackersGothicStdHeavy.ttf') format('truetype'),
+         url('fonts/SackersGothicStdHeavy.svg#SackersGothicStdHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'AGOldFaceBQMedium';
+    src: url('fonts/AGOldFaceBQMedium.eot');
+    src: url('fonts/AGOldFaceBQMedium.eot') format('embedded-opentype'),
+         url('fonts/AGOldFaceBQMedium.woff2') format('woff2'),
+         url('fonts/AGOldFaceBQMedium.woff') format('woff'),
+         url('fonts/AGOldFaceBQMedium.ttf') format('truetype'),
+         url('fonts/AGOldFaceBQMedium.svg#AGOldFaceBQMedium') format('svg');
+}
+
+/* ================================== */
+
+#vs-winelist {
+    background-color: #10273b;
+    padding-top: 2rem;
+}
+
+#facebook_logo {
+    font-size: 4rem;
+    padding-left: 1rem;
+}
+
+#insta_logo {
+    font-size: 4rem;
+}
+
+#trip_logo {
+    font-size: 4rem;
+}
+
+.shipping-states h2 {
+    color: white;
+}
+
+.wine-card {
+    margin-top: 1.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+#welcome_panel {
+    background-color: #10273b;
+    width: 100%;
+}
+
+#welcome_panel h2 {
+    font-family: "ChronicleTextG1SemiboldItalic", serif;
+    font-size: 2.2vw;
+    color: #fffef1;
+    text-transform: uppercase;
+    padding-top: 4.5vw;
+}
+
+#welcome_panel h1 {
+    font-size: 4vw;
+    font-family: "Conv_Banque Gothique", serif;
+    color: #fffef1;
+    text-transform: uppercase;
+    padding-top: 30px;
+    line-height: 1em;
+}
+
+#welcome_panel p {
+    font-family: "SackersGothicStdHeavy", serif;
+    color: #fffef1;
+    text-transform: uppercase;
+    font-size: 1vw;
+    padding-top: 40px;
+}
+
+#welcome_left_panel {
+    margin-left: 1px;
+}
+
+#bottles_home {
+    padding: none;
+    width: 100%;
+    height: 100%;
+}
+
+#bottles_div {
+    text-align: right;
+    padding-right: 0;   
+}
+
+.bottles {
+    width: 15vw;
+}
+
+#products_page {
+    height: auto;
+}
+
+#about_us_page {
+    background-color: #10273b;
+    display: flex;
+    flex-direction: column;
+}
+
+#header_logo {
+    width: 16vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    font-size: 1.5vw;
+    font-family: "Conv_Banque Gothique", serif;
+}
+
+a {
+    color: #10273b;
+    font-size: 1rem;
+}
+
+li {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-transform: uppercase;
+}
+
+.col-4 {
+    padding-left: 4vw;
+}
+
+input[type=text] {
+    width: 93%;
+    background-color: #10273b;
+    padding-top: 40px;
+    border: 0;
+    border-bottom: 1px solid #fffef1;
+    font-family: "AGOldFaceBQMedium", serif;
+    font-size: 18px;
+    color: #fffef1;
+    text-transform: uppercase;
+}
+
+input[type=email] {
+    width: 93%;
+    background-color: #10273b;
+    padding-top: 40px;
+    border: 0;
+    border-bottom: 1px solid #fffef1;
+    font-family: "AGOldFaceBQMedium", serif;
+    font-size: 18px;
+    color: #fffef1;
+    text-transform: uppercase;
+}
+
+input[type=submit] {
+    color: #fffef1;
+    margin-top: 50px;
+    margin-bottom: 4.5vw;
+    background-color: #212529;
+    font-family: "AGOldFaceBQMedium", serif;
+    font-size: 1.4vw;
+    border-color: #fffef1;
+    width: 35%;
+    height: 65px;
+    text-transform: uppercase;
+}
+
+#products_page h1 {
+
+    font-size: 4vw;
+    font-family: "Conv_Banque Gothique", serif;
+    color: #10273b;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    line-height: 1em;
+    text-align: center;
+}
+
+#product_row h2 {
+    font-family: "ChronicleTextG1SemiboldItalic", serif;
+    font-size: 32px;
+    color: #10273b;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+}
+
+.product_images {
+
+    display: flex;
+
+}
+
+#product_row {
+    
+text-align: center;
+    
+padding-top: 5em;
+    
+padding-left: 4vw;
+    
+padding-right: 4vw;
+}   
+
+#bottom_products_page {
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+#about_us_page h1 {
+    font-size: 4vw;
+    font-family: "Conv_Banque Gothique", serif;
+    color: #fffef1;
+    text-transform: uppercase;
+    padding-top: 4.5vw;
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 4.5vw;
+}
+
+#cider_video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding-bottom: 3vh;
+}
+
+#contact_page h1 {
+    font-size: 4vw;
+    font-family: "Conv_Banque Gothique", serif;
+    color: #10273b;
+    text-transform: uppercase;
+    padding-top: 100px;
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#contact_page p#contact_greeting {
+    font-family: "SackersGothicStdHeavy", serif;
+    color: #10273b;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-left: 100px;
+    line-height: 3em;
+    margin-right: 100px;
+}
+
+#address_contact {
+    font-family: "ChronicleTextG1SemiboldItalic", serif;
+    color: #10273b;
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+}
+
+#social_icons {
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 40px;
+    font-size: 5vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+    justify-content: space-between;
+}
+
+
+#circle_logo {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 60px;
+}
+
+#issued_image {
+    width: 51vw;
+}
+
+#circle_logo_bottom {
+    width: 14vw;
+}
+
+@media only screen and (max-width: 726px) {
+
+    a {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+
+    #facebook_logo {
+        font-size: 3rem;
+    }
+
+    #insta_logo {
+        font-size: 3rem;
+    }
+
+    #trip_logo {
+        font-size: 3rem;
+    }
+
+    li {
+        border: solid 1px black;
+        border-bottom: 0;
+    }
+    
+    .navbar {
+    padding: 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #fffef1;
+        top: 4.1rem;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #header_logo {
+        width: 25vw;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    #welcome_panel {
+        display: flex;
+    }
+
+    .col-4 {
+        display: block;
+        flex: none;
+        max-width: none;
+    }
+
+    #welcome_panel h2 {
+        font-size: 6vw;
+    }
+
+    #welcome_panel h1 {
+        font-size: 10vw;
+    }
+
+    #welcome_panel p {
+        font-size: 3vw;
+    }
+
+    input[type=text] {
+        font-size: 3vw;
+        padding-top: 3vh;
+    }
+
+    input[type=submit] {
+        height: 3rem;
+        width: 23vw;
+        margin-top: 3vh;
+        font-size: 3.5vw;
+  }
+
+    input[type=email] {
+        font-size: 3vw;
+        padding-top: 3vh;
+    }
+
+    #bottles_home {
+        width: 100%;
+    }
+
+    .col-8#bottles_div  {
+        display: block;
+        flex: none;
+        max-width: none;
+        padding: 0;
+        padding-top: 2vh;
+    }
+
+    #products_page h1 {
+        font-size: 10vw;
+        padding-top: 3vh;
+    }
+
+    #product_row {
+        padding-top: 2vh;
+    }
+
+    .bottles {
+        width: 33vw;
+    }
+
+    #product_row h2 {
+        font-size: 5vw;
+        padding-bottom: 2vh;
+    }
+
+    #about_us_page h1 {
+        font-size: 10vw;
+        padding-top: 3vh;
+    }
+
+    #contact_page h1 {
+        font-size: 10vw;
+        padding-top: 3vh;
+        padding-bottom: 1rem;
+    }
+
+    #contact_page p#contact_greeting {
+        margin: 0.5rem;
+        font-size: 2vw;
+    }
+
+    #address_contact {
+        font-size: 4vw;
+        padding-top: 1rem;
+    }
+
+    #social_icons {
+        font-size: 12vw;
+        padding-top: 1vh;
+        width: 60%;
+    }
+
+    #circle_logo_bottom {
+        width: 30vw;
+    }
+
+    #bottom_products_page {
+        padding-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    #issued_image {
+        width: 75vw;
+    }
+
+} 
+
+.btn-primary {
+    background-color: #10273b;
+    height: 3rem;
+    width: 3.5rem;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    z-index: 1;
+    display: none;
+    border-color: #fffef1;
+}
+
+.fa, .fas {
+    font-size: 1.6rem;
+    color: #fffef1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid fffef1;
+  -webkit-text-fill-color: #fffef1;
+  height: auto;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: "Conv_Banque Gothique", serif;
+}
+
+@media only screen and (min-width: 727px){
+    #mobile_menu {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+
+    .navbar-nav a {
+        font-size: 1.5rem;
+    }
+}
+
+.topBar {
+    background-color: #10273b;
+    color: white;
+    transition: ease .5s;
+}
+
+#topBarText {
+    padding: 0.5rem;
+    text-align: center;
+    width: auto;
+}
+
+#topBarText h1 {
+    font-family: "Conv_Banque Gothique", serif;
+    font-size: 2rem;
+    text-decoration: none;  
+}
+
+#topBarText p {
+    font-family: "ChronicleTextG1SemiboldItalic", serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#webTicker li {
+    font-size: 1.5rem;
+    border: none;;
+}
+
+.tickerContainer {
+    /* margin-top: 2rem; */
+    padding: 1rem;
+    /* margin-bottom: -4rem; */
+    background-color: #10273b;
+    color: white;
+    border-top: 1px solid white;
+}
+
+.tickerContainer li {
+    font-family: "ChronicleTextG1SemiboldItalic", serif;
+}
